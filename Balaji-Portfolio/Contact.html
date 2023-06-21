@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="navbar">
+    <a href="./Home.html" >Home</a>
+    <a href="./Blog.html" >Blog</a>
+    <a href="./Contact.html" >Contact</a>
+    <a href="./AboutMe.html" >About Me</a>
+  </div>
+  <div class="formContainer" style="margin: 10px;padding: 10px; border: 1px solid black;" >
+    <form action="() => console.log('form submitted')">
+      <input type="text" value="  " placeholder="First Name"  class="inputElement" required  />
+      <br />
+      <input type="Password" value="  " placeholder="Password"  class="inputElement"  />
+      <br />
+      <input type="number" value="  " placeholder="Mobile"  class="inputElement"  />
+      <br />
+      <input type="email" value="  " placeholder="Enter Email"  class="inputElement"   />
+      <br />
+
+      <select name="date" id="pet-select" class="inputElement" >
+        <option value="">--Please choose an option--</option>
+        <option value="1">1</option>
+        <option value="2" onchange="alertSelect(this)">Cat</option>
+        <option value="3">Hamster</option>
+        <option value="4">Parrot</option>
+        <option value="5">Spider</option>
+        <option value="6">Goldfish</option>
+      </select>
+       <br />
+      <input type="submit" value="x" class="inputElement" />
+
+
+    </form>
+
+
+
+  </div>
+
+  <script>
+    const selectElement = document.getElementById('pet-select')
+    console.log(selectElement)
+    selectElement.addEventListener('change',(e) => {
+      console.log(e.target)
+    })
+    function alertSelect(e){
+      console.log(e)
+    }
+  </script>
+</body>
+</html>

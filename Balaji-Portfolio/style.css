@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: yellow;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
+}
+
+
+#navbar {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  min-height: 50px;
+  font-size: 30px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inputElement {
+  background: #f5f6f7;
+  border: 2px solid #ccd0d5;
+  border-radius: 5px;
+  padding: 5px 2px;
+  margin: 10px 5px;
+}
+
+
+
+/*  Nav Bar => Background, text,  */
